@@ -8,7 +8,27 @@
 	.imagenamesmall {position: absolute; bottom: 0; left: 1.5em; width: 400px; font-size:12px; font-weight: bold; color: #fff; margin-left: auto;
 		margin-right: auto;}
 	</style>
+<style>
 
+/* responsive text queries */
+@media screen and (max-width: 992px) {
+  p,{
+    font-size: 95%;
+  }
+  h1 {
+    font-size: 24px;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p, {
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 20px;  
+  }
+}
+</style>
 	<div class="speakers" id="speakers">
 		<div class="container">
 			<div class="section-heading">
@@ -158,3 +178,18 @@
 		</div>
 	</div>
 
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>        
+    <script src="assets/js/libs/modernizr-latest.js"></script>        
+    <script src="assets/js/libs/jquery-1.11.0.min.js"></script>     
+    <script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>   
+    <!-- ///  plugins  /// -->
+    <script src="assets/js/plugins/fitvids/jquery.fitvids.js"></script>
+    <script src="assets/js/plugins/select/bootstrap-select.min.js"></script>
+    <script src="assets/js/plugins/gmap3/gmap3.min.js"></script>
+    <script src="assets/js/plugins/scrollTo/jquery.scrollTo.js"></script>
+    <script src="assets/js/plugins/nav/jquery.nav.js"></script>
+    <script src="assets/js/plugins/countdown/countdown.js"></script>
+    <script src="assets/js/plugins/placeholder/jquery.placeholder.js"></script>
+    <script src="assets/js/plugins/validator/jquery.form-validator.min.js"></script>
+    <script src="assets/js/plugins/wow/wow.min.js"></script>        
+    <script src="assets/js/main.js"></script> 
