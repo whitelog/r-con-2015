@@ -1,0 +1,182 @@
+<style>
+.name {font-size:13px; color:#3BAFDA; font-weight: bold;}
+.title {font-size:16px; color:#656D78; font-weight: bold;}
+.small_title {font-size:13px; color:#656D78; font-weight: bold;}
+.time {
+border-right: 1px solid #dddddd;
+}
+
+/* responsive text queries */
+@media screen and (max-width: 992px) {
+.small_title {font-size:13px; color:#656D78; font-weight: bold;}
+.name {font-size:13px; color:#3BAFDA; font-weight: bold;}
+.title {font-size:16px; color:#656D78; font-weight: bold;}
+}
+@media screen and (max-width: 768px) {
+.small_title {font-size:9px; color:#656D78; font-weight: bold;}
+.name {font-size:7px; color:#3BAFDA; font-weight: bold;}
+.title {font-size:12px; color:#656D78; font-weight: bold;}
+td {font-size:80%;}
+
+}
+  
+
+</style>
+<script src="assets/js/libs/jquery-1.11.0.min.js"></script> 
+<script src="jquery-responsive-tables/jquery-responsiveTables.js"></script> 
+<script src="jquery-responsive-tables/jquery.responsiveText.js"></script> 
+<link rel="stylesheet" type="text/css" href="jquery-responsive-tables/jquery-responsiveTables.css">
+<script type="text/javascript">
+var example=jQuery.noConflict();
+  example(document).ready(function() {
+    example('table.responsive').responsiveTables();
+  });
+</script>
+
+<!-- ///  begin schedule  /// -->
+<div class="schedule" id="schedule">
+
+	<div class="container"> 
+                <div class="section-heading">
+                        <h1>Program</h1>
+                </div>
+		<div class="row">   
+			<div class="col-xs-1"></div>
+			<div class="col-xs-10">
+				<!-- Nav tabs -->
+				<table class="table" cellspacing="0" cellpadding="0" width="880" align="center" border="0">
+					<tbody>
+						<tr class="info">
+							<td  class="time" width="130" align="center">~09:30</td>
+							<td  height="25" colspan="3" align="center"><strong>Registration</strong></td>
+						</tr>
+						<tr>
+							<td  class="time" width="130" align="center">08:30~09:30</td>
+							<td  height="25" colspan="3" align="center"><span><b>축사 & 환영사 & 개회사</b></span></td>
+						</tr>
+						<tr>
+							<td  class="time" width="130" align="center" style="vertical-align:middle;">10:00~10:40</td>
+							<td  height="60" colspan="3" align="center"><span class="title">Keynote 1 : </td>
+						</tr>
+						<tr>
+							<td  class="time" width="130" align="center" style="vertical-align:middle;" >10:40~11:20</td>
+							<td  height="60" colspan="3" align="center"><span class="title">Keynote 2 : 기업에서의 데이터 사이언스, 그 실제 현실과 비전</span><br><span class="name">정도희 / SK텔레콤 Data Insight팀장</span></td></tr>
+							<tr>
+								<td  class="time" width="130" align="center">11:20~12:00</td>
+								<td  height="40" colspan="3" align="center"><span class="title">Keynote 3 : </td>
+							</tr>
+							<tr class="success">
+								<td  class="time" width="130" align="center">12:00~13:00</td>
+								<td  colspan="3" align="center"><strong>Lunch Break </strong></td>
+							</tr>
+
+							<tr>
+							<td class="time" bgcolor="#ffdf7d" height="30" width="250" valign="middle" align="center"><span  style="COLOR: rgb(0,0,0)">2부<br>개별세션 </span> </td>
+								<td bgcolor="#48CFAD" height="30" width="300" align="center"><span  style="COLOR: rgb(0,0,0)">Track 1 <br>R과 통계적 데이터 분석 </span> </td>
+								<td bgcolor="#EC87C0" valign="middle" width="300" align="center"><span  style="COLOR: rgb(0,0,0)">Track 2 <br>R과 데이터 분석 활용 </span> </td>
+								<td bgcolor="#AC92EC" valign="middle" width="300" align="center"><span  style="COLOR: rgb(0,0,0)">Track 3 <br>R과 데이터 엔지니어링 </span> </td>
+							</tr>
+							<tr>
+								<td  class="time" height="40" align="center" style="vertical-align:middle;">13:00~13:50</td>
+								<td  class="time" align="center"><span class="small_title">Stochastic Social Network Analysis 
+in R (STATNET)</span><br/><span class="name">채충일/Penn State Univ. </span><br></td>
+								<td  class="time" align="center"><span class="small_title">R을 이용한 기상 데이터<br/>시각화 및 활용</span><br/><span class="name">김승욱/기상청</span><br></td>
+								<td  align="center"><span class="small_title">Apache Tajo와 R을 연동한<br/>빅데이터 분석</span><br><span class="name">고영경/그루터</span><br></td>
+							</tr>
+							<tr class="warning">
+								<td  class="time" width="130" align="center" style="vertical-align:middle;">13:50~14:00</td>
+								<td  colspan="3" align="center"><strong>Break</strong></td>
+							</tr>
+							<tr>
+
+								<td  class="time" height="40" align="center" style="vertical-align:middle;">14:00~14:50</td>
+								<td  class="time" align="center" style="vertical-align:middle;"><span class="name">미정</span><br></td>
+								<td  class="time" align="center"><span class="small_title">R을 활용한 <br>홈 데이터 분석 플랫폼</span><br><span class="name">김지영/ETRI</span><br></td>
+								<td  class="time" align="center" ><span class="small_title">미정<br><br></span><span class="name">김인범/SK C&C</span><br></td>
+							</tr>
+							<tr class="warning">
+								<td  class="time" width="130" align="center" style="vertical-align:middle;">14:50~15:30</td>
+								<td  colspan="3" align="center"><strong>Coffee Break</strong></td>
+							</tr>
+							<tr>
+								<td  class="time" align="center" style="vertical-align:middle;">15:30~16:20</td>
+								<td  class="time" align="center" style="vertical-align:middle;"><span class="name">미정</span><br></td>
+								<td  class="time" align="center"><span class="small_title">미정<br><br></span><span class="name">황승식/인하대 의학전문대학원</span><br></td>
+								<td  class="time" align="center"><span class="small_title">SparkR - Spark를 이용한 분산환경에서의 R 프로그래밍</span><br><span class="name">이상훈/SK C&C</span><br></td>
+							</tr>
+							<tr class="warning">
+								<td  class="time" width="130" valign="center" align="center" style="vertical-align:middle;">16:20~16:30</td>
+								<td  colspan="3" align="center"><strong>Break</strong></td>
+							</tr>
+							<tr>
+								<td  class="time" height="40" width="130" align="center">16:30~17:20</td>
+								<td  align="center" colspan="3"><span class="name">미정</span></td>
+							</tr>
+							<tr class="info">
+								<td  class="time" width="130" align="center" style="vertical-align:middle;">17:20</td>
+								<td  colspan="3" align="center"><strong>폐회</strong></td>
+							</tr>
+							</tbody>
+						</table>
+<table class="responsive" data-min="11" data-max="30" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th valign="middle">2013</th>
+          <th valign="middle">Internet Explorer</th>
+          <th valign="middle">Firefox</th>
+          <th valign="middle">Chrome</th>
+          <th valign="middle">Safari</th>
+          <th valign="middle">Opera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th valign="middle">May</th>
+          <td valign="middle">12.6 %</td>
+          <td valign="middle">27.7 %</td>
+          <td valign="middle">52.9 %</td>
+          <td valign="middle">4.0 %</td>
+          <td valign="middle">1.6 %</td>
+        </tr>
+        <tr>
+          <th valign="middle">April</th>
+          <td valign="middle">12.7 %</td>
+          <td valign="middle">27.9 %</td>
+          <td valign="middle">52.7 %</td>
+          <td valign="middle">4.0 %</td>
+          <td valign="middle">1.7 %</td>
+        </tr>
+        <tr>
+          <th valign="middle">March</th>
+          <td valign="middle">13.0 %</td>
+          <td valign="middle">28.5 %</td>
+          <td valign="middle">51.7 %</td>
+          <td valign="middle">4.1 %</td>
+          <td valign="middle">1.8 %</td>
+        </tr>
+        <tr>
+          <th valign="middle">February</th>
+          <td valign="middle">13.5 %</td>
+          <td valign="middle">29.6 %</td>
+          <td valign="middle">50.0 %</td>
+          <td valign="middle">4.1 %</td>
+          <td valign="middle">1.8 %</td>
+        </tr>
+        <tr>
+          <th valign="middle">January</th>
+          <td valign="middle">14.3 %</td>
+          <td valign="middle">30.2 %</td>
+          <td valign="middle">48.4 %</td>
+          <td valign="middle">4.2 %</td>
+          <td valign="middle">1.9 %</td>
+        </tr>
+      </tbody>
+    </table>
+					</div>
+					<!-- Tab panes -->    
+					<div class="col-xs-1"></div>        
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- ///  end schedule  /// -->
