@@ -26,3 +26,9 @@ class Contact extends DefaultLayout {
     respondView()
   }
 }
+@GET("Info")
+class Info extends DefaultLayout {
+  def execute() {
+    respondView(Map("type" ->"mustache"))
+  }
+}
