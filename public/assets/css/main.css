@@ -533,7 +533,7 @@ fieldset[disabled] .btn-link:focus {
 .promo {
   background-repeat: no-repeat;
   background-position: right center;
-  background-position: 700px 0;
+  background-position: 650px 0;
   margin-top: 61px;
   position: relative;
 }
@@ -552,6 +552,9 @@ fieldset[disabled] .btn-link:focus {
 .promo .promo-text {
   padding: 60px 0;
   color: #ffffff;
+}
+.promo .promo-text h1 {
+  font-size: 29px
 }
 .promo .promo-text hr {
   border-top-color: #ffffff;
