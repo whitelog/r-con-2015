@@ -1,39 +1,169 @@
 <div class="row">
 	<div class="col-xs-1"></div>
 	<div class="col-xs-10">
-		<br>
-		<h2><font style="color:rgb(0,150,167)">주요일정</font></h2><hr>
-		<h4>2015.04.20 ~ : 컨퍼런스 홈페이지 오픈</h4>
-		<h4>2015.05.11 ~ : 사전접수 시작</h4>
-		<h4>~ 2015.05.30 : 발표자 모집</h4>
-		<h4>~ 2015.06.13 : 후원 및 자원봉사 모집</h4>
-
-		<br>
-
-		<form class="form-inline">
-		<h2><font style="color:rgb(0,150,167)">자원봉사자를 모집하고 있습니다. 자원봉사를 희망하시는 분은 아래의 형식에 정보를 입력후 제출해 주십시오.</font></h2><br>
-			<div class="form-group">
-				<label><font size=4.000rem>이름</font></label><input type="text" class="form-control" placeholder="홍길동"></input>
-			</div>
-			<div class="form-group">
-				<label><font size=4.000rem>전화번호</font></label><input type="text" class="form-control" placeholder="010-1234-5678"></input>
-			</div>
-			<div class="form-group">
-				<label><font size=4.000rem>이메일</font></label><input type="email" class="form-control" placeholder="volunteer@rkorea.com"></input>
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
-		<br>
-		<h2><font style="color:rgb(0,150,167)">발표자 모집</font></h2><hr>
-		<h4>발표 지원 접수는 <font color="red">5.30</font>일 까지 받습니다. golden_temple@hotmail.co.kr로 발표제목과 초록을 보내주시기 바랍니다.</h4>
-			<h4> 발표주제는 예시는 다음과 같습니다.</h4>
-				<div style="font-size: 17px">
-					1.이미지 처리에 있어 Deep Neural Network의 활용<br>
-					2.Graphical Model의 한계와 개선 방안<br>
-					3.Network Analaysis에 있어 R의 연산능력 개선<br><br>
-					위 사례는 하나의 예시일 뿐 주제는 자유롭게 정하셔도 됩니다.<br>
+		<div class="faq" id="schedulesession" style="background-color: #ffffff;">
+			<div class="row">
+				<div class="col-md-4 wow fadeInLeft">
+					<h3><font style="color:rgb(0,150,167)">주요일정</font></h3><hr>
 				</div>
-
+				<div class="col-md-8 wow fadeInRight">
+					<div class="panel-group" id="faq">
+						<div class="panel">
+							<h4>2015.04.20 ~ : 컨퍼런스 홈페이지 오픈</h4>
+						</div>
+						<div class="panel">
+							<h4>2015.05.11 ~ : 사전접수 시작</h4>
+						</div>
+						<div class="panel">
+							<h4>~ 2015.05.30 : 발표자 모집</h4>
+						</div>
+						<div class="panel">
+							<h4>~ 2015.06.13 : 후원 및 자원봉사 모집</h4>
+						</div>      
+					</div>                
+				</div>
 			</div>
-			<div class="col-xs-1"></div>
 		</div>
+		<hr>
+		<div class="faq" id="schedulesession" style="background-color: #ffffff;">
+			<div class="row">
+				<div class="col-md-4 wow fadeInLeft">
+					<h3><font style="color:rgb(0,150,167)">발표자 모집</font></h3><hr>
+				</div>
+				<div class="col-md-8 wow fadeInRight">
+					<div class="panel-group" id="faq">
+						<div class="panel">
+							<h4>발표 지원 접수는 <font color="red">5.30</font>일 까지 받습니다. golden_temple@hotmail.co.kr로 <b>발표제목</b>과 <strong>초록</strong>을 보내주시기 바랍니다.</h4>
+						</div>
+						<div class="panel">
+							<h4>발표주제는 예시는 다음과 같습니다.</h4>
+						</div>
+						<div class="panel">
+							<h4>1.이미지 처리에 있어 Deep Neural Network의 활용</h4>
+						</div>
+						<div class="panel">
+							<h4>2.Graphical Model의 한계와 개선 방안</h4>
+						</div>     
+						<div class="panel">
+							<h4>3.Network Analaysis에 있어 R의 연산능력 개선</h4>
+						</div>
+						<div class="panel">
+							<h4>위 사례는 하나의 예시일 뿐 주제는 자유롭게 정하셔도 됩니다.</h4>
+						</div>   
+					</div>                
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="promo">
+			<!-- ///  semitransparent layer  /// -->
+			<div class="color-correction"></div> 
+			<!-- ///  begin entry  /// -->         
+			<div class="row">
+				<!-- ///  begin text section  /// -->
+				<div class="col-xs-12 col-md-6">
+					<div class="promo-text" style="padding: 10px 20px;">
+						<h1>자원봉사자 모집</h1>
+                               	
+						<h4 style="padding: 10px 0px;">자원봉사자를 모집하고 있습니다.</h4>						
+						<hr>  
+						<h4>자원봉사를 희망하시는 분은 아래의 형식에 정보를 입력후 제출해 주십시오.</h4>
+					</div>
+				</div>
+				<!-- ///  end text section  /// -->
+				<!-- ///  begin registration form  /// -->
+				<div class="col-xs-12 col-md-6">
+					<div class="register">
+						<form role="form" method="POST" id="registrationForm">
+							<div class="form-group">                      
+								<input type="text" id="regName" name="name" data-validation="length" data-validation-length="min4" class="form-control input-lg" placeholder="Name">
+							</div>
+							<div class="form-group">                      
+								<input type="email" id="regMail" name="email" data-validation="email" class="form-control input-lg" placeholder="Email">
+							</div>
+							<div class="form-group">                      
+								<input type="text" id="regPhone" name="phone" data-validation="required" class="form-control input-lg" placeholder="Phone">
+							</div>                  
+							<button type="submit" class="btn btn-default btn-block btn-lg">Register</button>
+						</form>
+						<div class="ok">
+							<p class="icon"><i class="fa-check-circle-o fa fa-5x success-color"></i></p>
+							<h3>Thanks!</h3>
+							<p class="lead">Message Sent</p>
+							<button type="button" class="btn btn-warning" id="back">Back</button>
+						</div>
+					</div>
+				</div>
+				<!-- ///  end registration form  /// -->
+			</div>            
+
+			<!-- ///  end entry  /// -->
+		</div>
+		<hr>
+		<div class="faq" id="faqSection">
+			<div class="row">
+				<div class="col-md-4 wow fadeInLeft">
+					<h1>FAQ</h1>
+					<p class="lead">자주 하는 질문에 대한 답변입니다.</p>
+					<hr>
+					<p>질문을 클릭하세요</p>
+				</div>
+				<div class="col-md-8 wow fadeInRight">
+					<div class="panel-group" id="faq">
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq1">
+								주차는 지원되나요?
+							</a>
+							<div id="faq1" class="panel-collapse collapse">
+								<p>주차지원은 되지 않으므로 대중교통을 이용하시기 바랍니다.</p>
+							</div>
+						</div>
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq2">
+								중식은 제공되나요?
+							</a>
+							<div id="faq2" class="panel-collapse collapse">
+								<p>세종호텔 도시락이 제공됩니다.</p>
+							</div>
+						</div>
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq3">
+								자원봉사자의 혜택은 어떤것이 있나요?
+							</a>
+							<div id="faq3" class="panel-collapse collapse">
+								<p>초청장과 주차가 제공됩니다.</p>
+							</div>
+						</div>
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq4">
+								세금계산서 문의
+							</a>
+							<div id="faq4" class="panel-collapse collapse">
+								<p>온오프믹스에서 결제후 출력하시면 됩니다.</p>
+							</div>
+						</div>
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq5">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+							</a>
+							<div id="faq5" class="panel-collapse collapse">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, perferendis facere non laudantium nostrum odit corporis repudiandae voluptas dolorem consequuntur! Assumenda, eveniet, voluptates quos id at facilis perferendis obcaecati recusandae?</p>
+							</div>
+						</div>
+						<div class="panel">
+							<a data-toggle="collapse" data-parent="#faq" href="#faq6">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+							</a>
+							<div id="faq6" class="panel-collapse collapse">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, perferendis facere non laudantium nostrum odit corporis repudiandae voluptas dolorem consequuntur! Assumenda, eveniet, voluptates quos id at facilis perferendis obcaecati recusandae?</p>
+							</div>
+						</div>        
+					</div>                
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-1">
+	</div>
+</div>
+<br>

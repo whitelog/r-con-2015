@@ -561,7 +561,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .promo .register {
   padding: 20px;
-  margin: 60px 0;
+  margin: 20px 20px;
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
   text-align: center;
@@ -986,11 +986,11 @@ fieldset[disabled] .btn-link:focus {
 *** faq ***
 ************************************************/
 .faq {
-  padding: 60px 0;
+  padding: 20px 20px;
   background-color: #eeeeee;
 }
 .faq h1 {
-  margin-top: 40px;
+  margin-top: 5px;
 }
 .faq hr {
   border-top-color: #999999;

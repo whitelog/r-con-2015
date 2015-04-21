@@ -1,6 +1,6 @@
 package quickstart.action
 
-import xitrum.annotation.GET
+import xitrum.annotation.{GET, POST}
 
 @GET("")
 class SiteIndex extends DefaultLayout {
@@ -23,12 +23,18 @@ class Speaker extends DefaultLayout {
 @GET("Contact")
 class Contact extends DefaultLayout {
   def execute() {
-    respondView()
+    respondView(Map("type" ->"mustache"))
   }
 }
 @GET("Info")
 class Info extends DefaultLayout {
   def execute() {
     respondView(Map("type" ->"mustache"))
+  }
+}
+@POST("/Info")
+class Postinfo extends DefaultLayout {
+  def execute() {
+    respondJson("okay")
   }
 }
