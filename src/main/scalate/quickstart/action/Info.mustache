@@ -101,14 +101,17 @@
 					<div class="register">
 						<form role="form" method="POST" id="registrationForm">
 							<div class="form-group">                      
-								<input type="text" id="regName" name="name" data-validation="length" data-validation-length="min4" class="form-control input-lg" placeholder="Name">
+								<input type="text" id="regName" name="name" data-validation="length" data-validation-length="required" class="form-control input-lg" placeholder="Name">
 							</div>
 							<div class="form-group">                      
 								<input type="email" id="regMail" name="email" data-validation="email" class="form-control input-lg" placeholder="Email">
 							</div>
 							<div class="form-group">                      
 								<input type="text" id="regPhone" name="phone" data-validation="required" class="form-control input-lg" placeholder="Phone">
-							</div>                  
+							</div>  
+							<div class="form-group">                      
+								<input type="text" id="company" name="company" data-validation="required" class="form-control input-lg" placeholder="소속">
+							</div>                   
 							<button type="submit" class="btn btn-default btn-block btn-lg">Register</button>
 						</form>
 						<div class="ok">

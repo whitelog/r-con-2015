@@ -74,18 +74,31 @@
           var name = $("#regName").val(),
             email = $("#regMail").val(),
             phone = $("#regPhone").val(),
-            plan = $("#regPlan").val(),
-            allData = 'name=' + name + '&email=' + email + '&phone=' + phone + '&plan=' + plan;
+            company = $('#company').val()
+            
           $.ajax({
             type: "POST",
-            url: "php/register.php",
-            data: allData,
-            success: function () {
-              $(".register").addClass("success")
-              $("#regName").val("")
-              $("#regMail").val("")
-              $("#regPhone").val("")
-            }
+            url: "https://docs.google.com/forms/d/1CdoH3aS3hFoMsluxcspdbRjFk_LR1Ug4LVJJh_0deto/formResponse",
+            data: {"entry.1679963830" : name, "entry.261194947" : email, "entry.323156001": phone, "entry.1328718019": company},
+            dataType: 'xml',
+            statusCode: {
+                                0: function (){
+                                  $(".register").addClass("success")
+                                  $("#regName").val("")
+                                  $("#regMail").val("")
+                                  $("#regPhone").val("")
+                                  $("#company").val("")
+                                    //Success message
+                                },
+                                200: function (){
+                                  $(".register").addClass("success")
+                                  $("#regName").val("")
+                                  $("#regMail").val("")
+                                  $("#regPhone").val("")
+                                  $("#company").val("")
+                                    //Success Message
+                                }
+                            }
           });
           return false;
         }
