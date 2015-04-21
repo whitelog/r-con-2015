@@ -74,17 +74,19 @@
           var name = $("#regName").val(),
             email = $("#regMail").val(),
             phone = $("#regPhone").val(),
-            plan = $("#regPlan").val(),
-            allData = 'name=' + name + '&email=' + email + '&phone=' + phone + '&plan=' + plan;
+            company = $('company').val(),
+            allData = 'name=' + name + '&email=' + email + '&phone=' + phone + '&company=' + company;
           $.ajax({
             type: "POST",
-            url: "php/register.php",
+            url: "https://docs.google.com/forms/d/1CdoH3aS3hFoMsluxcspdbRjFk_LR1Ug4LVJJh_0deto/formResponse",
             data: allData,
+            dataType: 'xml'
             success: function () {
               $(".register").addClass("success")
               $("#regName").val("")
               $("#regMail").val("")
               $("#regPhone").val("")
+              $("#company").val("")
             }
           });
           return false;

@@ -32,9 +32,3 @@ class Info extends DefaultLayout {
     respondView(Map("type" ->"mustache"))
   }
 }
-@POST("/Info")
-class Postinfo extends DefaultLayout {
-  def execute() {
-    respondJson("okay")
-  }
-}
