@@ -128,7 +128,6 @@
       init: function () {
         preloader()
         responsiveVideo()
-        googleMap()
         selectpicker()
         navigation()
         countdown()
