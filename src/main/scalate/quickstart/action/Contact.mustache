@@ -1,0 +1,86 @@
+<br>
+<div id="content">
+  <div class="container">
+    <div class="block">
+    <div class="row"><div class="col-xs-1"></div><div class="col-xs-10">
+      <div class="row">
+        <div class="col-sm-5">
+          <h1>등록방법</h1>
+        </div>
+        <div class="col-sm-7">
+          <h1>온오프 믹스</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-5">
+          <h2>찾아오시는길</h2>
+          <h3>지하철</h3>
+          <p>2호선 건대입구역이나 
+            5호선 군자역에서 환승 후, <br>
+            7호선 세종대역(어린이대공원역) 하차 후 6번 출구</p>
+            <h3>버스</h3>
+            <ul class="list_bus">
+              <li>
+                <dl>
+                  <dt>어린이대공원</dt>
+                  <dd>
+                    <ul>
+                      <li><파랑(간선) 721</li>
+                      <li>초록(지선) 119, 3216, 4212</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>화양리</dt>
+                  <dd>
+                    <ul>
+                      <li>파랑(간선) 240, 302</li>
+                      <li>초록(지선) 2222, 3217, 3220</li>
+                      <li>빨강(광역) 102</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>후문(세종초)</dt>
+                  <dd>
+                    <ul>
+                      <li>파랑(간선) 240</li>
+                      <li>초록(지선) 2012, 2013</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-7">
+            <div id="map1" style="width:100%;height:400px;">
+            </div>
+          </div>
+          </div>
+          <div class="col-xs-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=3d7ca5739ba212712b825d00bb67442e"></script>
+  <script>
+   var markers = [
+   {
+    position: new daum.maps.LatLng(37.5504072, 127.073164)  ,  
+  }
+  ];
+  var container = document.getElementById('map1');
+  var options = {
+   center: new daum.maps.LatLng(37.5494052, 127.073154) ,
+   level: 4,
+   marker: markers
+ };
+ var map = new daum.maps.StaticMap(container, options);
+</script>
