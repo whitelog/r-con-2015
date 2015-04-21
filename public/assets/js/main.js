@@ -11,56 +11,6 @@
       }
     }
     // A jQuery plugin to create and manage Google Maps to jQuery
-    function googleMap() {
-      var ourAddress = $("#ourLocation").data("location") || "earth";
-      function getLatLong(address) {
-        var geo = new google.maps.Geocoder;
-        geo.geocode({
-          'address': address
-        }, function (results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            $("#map").gmap3({
-              map: {
-                options: {
-                  maxZoom: 14,
-                  streetViewControl: true,
-                  panControl: true,
-                  panControlOptions: {
-                    position: google.maps.ControlPosition.RIGHT_CENTER
-                  },
-                  zoomControl: true,
-                  zoomControlOptions: {
-                    style: google.maps.ZoomControlStyle.LARGE,
-                    position: google.maps.ControlPosition.LEFT_CENTER
-                  },
-                  mapTypeControl: true,
-                  scrollwheel: false,
-                  disableDoubleClickZoom: true
-                }
-              },
-              streetviewpanorama: {
-                options: {
-                  container: $("#streetView"),
-                  opts: {
-                    position: results[0].geometry.location,
-                    pov: {
-                      heading: 34,
-                      pitch: 10,
-                      zoom: 0
-                    }
-                  }
-                }
-              }
-            }, "autofit");
-          } else {
-            alert("Geocode was not successful for the following reason: " + status);
-          }
-        })
-      }
-      if ($.fn.gmap3) {
-        getLatLong(ourAddress)
-      }
-    }
     // A custom select for Bootstrap using button dropdown
     function selectpicker() {
       if ($.fn.selectpicker) {
